@@ -1,0 +1,58 @@
+
+
+    .box:hover
+    {
+        opacity:0.3;
+    }
+    .margin{
+        margin-top:10px;
+    }
+    .top{
+        margin-top:20px;
+    }
+    .mydivouter{
+margin-left:15px;
+margin-bottom:5px;
+background-color: rgb(230, 230, 230);
+    }
+
+.mybuttonoverlap{
+position: absolute;
+z-index: 2;
+top: 44px;
+display: none;
+left: 59px;	
+}
+.mydivouter:hover .mybuttonoverlap{ 
+display:block;
+}
+
+
+
+  .author-profile {
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    display: none;
+    left: 59px;	
+  }
+  .mydivouter:hover .author-profile {
+    display: block;
+  }
+  a {
+    color: #ff003b !important;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.cdk-overlay-pane.my-dialog {
+    position: relative!important;
+  }
+  .close.mat-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    line-height: 14px;
+    min-width: auto;
+  }
