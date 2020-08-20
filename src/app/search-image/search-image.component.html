@@ -1,34 +1,30 @@
-
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-          <div class="navbar-header">
-              <a [routerLink]="['/searchImage']" routerLinkActive="active" class="navbar-brand">Search Image</a>
-          </div>
-          <div class="navbar-header">
-              <a [routerLink]="['/favImages']" routerLinkActive="active" class="navbar-brand">Favourites</a>
-          </div>
-    
-      </div>
-    </nav>
+<nav class="navbar navbar-expand-sm bg-light">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a [routerLink]="['/searchImage']" routerLinkActive="active" class="navbar-brand">Search Image</a>
+    </li>
+    <li class="nav-item">
+      <a [routerLink]="['/favImages']" routerLinkActive="active" class="navbar-brand">Favourites</a>
+    </li>
+  </ul>
+</nav>
 <div class="container margin">
 <div class="row">
-  <div class="pull-right">
+  <div>
     <h4>Search Image</h4>
-    <form >
-      <input type="search"  (keyup)="search($event.target.value)">
+    <form>
+      <input type="search"  (keyup)="search($event.target.value)" >
     </form>
   </div>
 </div>
 
-<div class="row">
-    <div class="container-fluid">
-      <p>Searched Images: </p>
-    </div>
+<div class="row" style="padding-top:10px;padding-bottom:10px">
+<br>
 <div class ="col-md-2 mydivouter" *ngFor = "let image of searchImage; let i=index;" >
   <img src='{{image.urls.small}}' class="image" style="height:200px; width:200px;"/>
   <input type="button" class="mybuttonoverlap btn btn-info" (click)="addToFav(i)" value="Add To Favourite"/>
     <div class="author-profile">
-        <a href="{{image.user.portfolio_url}}" target="_blank" >Author Profile Link
+        <a href="{{image.user.portfolio_url}}" style="font-weight:bold" target="_blank" >Author Profile
         </a>
     </div>
   </div>

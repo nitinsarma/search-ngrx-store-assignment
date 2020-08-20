@@ -9,3 +9,17 @@
     line-height: 14px;
     min-width: auto;
   }
+
+  a:hover:after {
+    content: "";
+    color: #b30018;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+a:hover {
+  color: #b30018;
+  text-decoration: none !important;
+}

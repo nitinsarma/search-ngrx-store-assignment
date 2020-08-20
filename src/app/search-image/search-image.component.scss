@@ -21,7 +21,7 @@ position: absolute;
 z-index: 2;
 top: 44px;
 display: none;
-left: 59px;	
+left: 50px;	
 }
 .mydivouter:hover .mybuttonoverlap{ 
 display:block;
@@ -34,17 +34,24 @@ display:block;
     z-index: 2;
     top: 90px;
     display: none;
-    left: 59px;	
+    left: 50px !important;	
   }
   .mydivouter:hover .author-profile {
     display: block;
   }
-  a {
-    color: #ff003b !important;
-    text-decoration: none;
-    background-color: transparent;
+  a:hover:after {
+    content: "";
+    color: #b30018;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
-
+a:hover {
+  color: #b30018;
+  text-decoration: none !important;
+}
 .cdk-overlay-pane.my-dialog {
     position: relative!important;
   }
